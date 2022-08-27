@@ -33,6 +33,7 @@ function triangulo(l1,l2,l3){
 
     if(l1 + l2 > l3 && l1 + l3 > l2 && l2 + l3 > l1){
         aviso2.innerText = "Os 3 lados formam um triângulo!"
+        aviso2.style = "color: green";
         aviso.innerText ="";
 
         if(l1 == l2 && l1 == l3){
@@ -43,6 +44,7 @@ function triangulo(l1,l2,l3){
             result =  "Triângulo Escaleno";
         }          
     }else{
+        aviso2.style = "color: red";
         aviso2.innerText = "Os 3 lados NÃO formam um triângulo!"
         result = "";
     }
